@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { competicao } from "../data/competicao";
+import { competicoes } from "../data/competicao";
 
 export default function Home() {
+  const competicao = competicoes[0];
+
   return (
     <main>
       <nav>
