@@ -15,7 +15,9 @@ export default function CompeticoesPage() {
 
       {competicoes.map((competicao) => (
         <article key={competicao.nome}>
-          <h2>{competicao.nome}</h2>
+          <h2>
+            <Link href={`/competicoes/${competicao.id}`}>{competicao.nome}</Link>
+          </h2>
           <p>Época {competicao.epoca}</p>
           <p>Última atualização: {competicao.atualizadoEm}</p>
 
